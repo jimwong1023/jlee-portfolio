@@ -1,0 +1,14 @@
+default: &default
+  adapter: mysql2
+
+test:
+  <<: *default
+  url: <%= ENV['DATABASE_URL_TEST'] %>
+
+development:
+  <<: *default
+  url: <%= ENV['DATABASE_URL_DEVELOPMENT'] %>
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
