@@ -488,7 +488,7 @@ section.module.parallax h2{
     font-weight: 500;
 }
 section.module.parallax-1 {
-  background-image: url("/assets/hero1.jpg");
+  background-image: url("/assets/hero1.png");
 }
 section.module.parallax-2, {
   background-image: url("/assets/hero2.png");
@@ -659,7 +659,8 @@ blockquote {
 }
 .list-group-item {
     border: none;
-    padding: 1.5%;
+    padding: 1%;
+    margin-top: 5px !important;
     font-size: 12px;
     text-align: left;
 }
@@ -813,7 +814,9 @@ blockquote {
     color: black;
     width: 80px;
 }
-.size-btn:hover {
+.size-btn:hover,
+.size-btn:visited,
+.size-btn:active {
     color: black;
     background-color: #f7f7f7;
 }
@@ -844,10 +847,10 @@ blockquote {
     border: 2px solid black !important;
 }
 .product1-color1 {
-    background-image: image-url("product1-color1.png");
+    background-image: url("/assets/product1-color1.png");
 }
 .product1-color2 {
-    background-image: image-url("product1-color2.png");
+    background-image: url("/assets/product1-color2.png");
 }
 
 .bg-color{
@@ -855,12 +858,6 @@ blockquote {
 } 
 .modal-content {
     margin: 0px !important;
-}
-.product1-color1 {
-    background-image: image-url("p3/product1-color1.png");
-}
-.product1-color2 {
-    background-image: image-url("p3/product1-color2.png");
 }
 .portfolio-modal .modal-content h1 {
     margin: 25px 0px;
@@ -942,7 +939,7 @@ button {
 }
 .fa-facebook,
 .fa-linkedin,
-.fa-behance {
+.fa-behance,
+.fa-angle-up {
     padding-right: 0px !important;
 }
-
