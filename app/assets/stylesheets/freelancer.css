@@ -943,3 +943,7 @@ button {
 .fa-angle-up {
     padding-right: 0px !important;
 }
+.project-content p,
+.project-description {
+    color: black;
+}
