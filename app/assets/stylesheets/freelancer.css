@@ -507,7 +507,7 @@ section.parallax-5 h1 {
   color: white;
 }
 section.module.parallax-4 {
-  background-image: url("/assets/hero1.jpg");
+  background-image: url("/assets/hero1.png");
   height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
