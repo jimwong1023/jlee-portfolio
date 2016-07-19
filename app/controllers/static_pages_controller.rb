@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def cs2
   end
+
+  def ecommerce
+  end
 end

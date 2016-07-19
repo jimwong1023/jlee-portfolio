@@ -1,0 +1,661 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><%= image_tag "name.png", class: "img-responsive center-block" %></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="page-scroll">
+          <a href="/about">About</a>
+        </li>
+        <li class="page-scroll">
+          <a href="index.html/#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-- Portfolio Modals -->
+<div>
+    <div class="modal-content">
+        <div class="container">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h1>ECOMMERCE</h1>
+                        <h2>Wireframe</h2>
+                        <p class="ux-p">Designed a blueprint of page's layout using <a href="balsamiq.com">Balsamiq</a> to demonstrate the transition of clicking the <span style="background-color: #FFFF00;">"Quickshop"</span> link of a product.</p>
+                        <%= image_tag "ecommercewireframe.png", class: "img-responsive center-block", alt: "Responsive image" %>
+                        <div class="break">
+                            <h2>Front-End Prototype</h2>
+                            <p class="ux-p">A quick prototype is built in the browser to test how the site will look, feel, and behave using HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="lead">THIS JUST IN</p>
+                            <div class="list-group">
+                                <li class="list-group-item">NEW ARRIVALS</li>
+                                <li class="list-group-item">SUMMER DENIM DRESSING</li>
+                                <li class="list-group-item">LOOKS WE LOVE</li>
+                                <li class="list-group-item">LABELS WE LOVE</li>
+                                <li class="list-group-item">THE GETAWAY SHOP</li>
+                                <li class="list-group-item">THE ESSENTIALS</li>
+                            </div>
+                            <div class="list-group">
+                                <p class="lead">SHOP ALL</p>
+                                <li class="list-group-item">DENIM</li>
+                                <li class="list-group-item">SWEATERS</li>
+                                <li class="list-group-item active">SHIRTS & TOPS</li>
+
+                                <li class="list-group-item sub-item">(see all)</li>
+                                <li class="list-group-item sub-item">tanks</li>
+                                <li class="list-group-item sub-item">tees</li>
+                                <li class="list-group-item sub-item">long sleeves</li>
+
+                                <li class="list-group-item">TEES & MORE</li>
+                                <li class="list-group-item">JACKETS</li>
+                                <li class="list-group-item">PANTS AND SHORTS</li>
+                                <li class="list-group-item">OVERALLS AND JUMPSUITS</li>
+                                <li class="list-group-item">DRESSES</li>
+                                <li class="list-group-item">SKIRTS</li>
+                                <li class="list-group-item">SWIM AND BEACHWEAR</li>
+                                <li class="list-group-item">SHOES AND SANDALS</li>
+                                <li class="list-group-item">BAGS</li>
+                                <li class="list-group-item">ACCESSORIES</li>
+                                <li class="list-group-item"><span style="color: red;">SALE</span></li>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9">
+
+                            <p class="lead">SHIRTS AND TOPS</p>
+
+                            <div class="row">
+
+                                <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <%= image_tag "p3/product-1.png", alt: "" %>
+                                        <div class="caption">
+                                            <a class="btn quickview" role="button" data-toggle="modal" data-target="#modal1">QUICK SHOP</a>
+                                            <p class="product-info"><a class="product-link">space dye muscle tank</a></p>
+                                            <p class="product-info">$39.99</p>
+                                            <p class="grey">see more colors <span class="grey">&#9662;</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <%= image_tag "p3/product-2.png", alt: "" %>
+                                        <div class="caption">
+                                            <a class="btn quickview" role="button" data-toggle="modal" data-target="#modal2">QUICK SHOP</a>
+                                            <p class="product-info"><a class="product-link">plaid ruffle blouse</a></p>
+                                            <p class="product-info">was $49.99</p>
+                                            <p class="sale">now $29.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <%= image_tag "p3/product-3.png", alt: "" %>
+                                        <div class="caption">
+                                            <a class="btn quickview" role="button" data-toggle="modal" data-target="#modal3">QUICK SHOP</a>
+                                            <p class="product-info"><a class="product-link">striped cropped tank</a></p>
+                                            <p class="product-info">$29.99</p>
+                                            <p class="grey">see more colors <span class="grey">&#9662;</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <%= image_tag "p3/product-4.png", alt: "" %>
+                                        <div class="caption">
+                                            <a class="btn quickview" role="button" data-toggle="modal" data-target="#modal4">QUICK SHOP</a>
+                                            <p class="product-info"><a class="product-link">everyday cotton tank</a></p>
+                                            <p class="product-info">was $19.99</p>
+                                            <p class="sale">now $15.99</p>
+                                            <p class="grey">see more colors <span class="grey">&#9662;</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <%= image_tag "p3/product-5.png", alt: "" %>
+                                        <div class="caption">
+                                            <a class="btn quickview" role="button" data-toggle="modal" data-target="#modal5">QUICK SHOP</a>
+                                            <p class="product-info"><a class="product-link">chambray pocket shirt</a></p>
+                                            <p class="product-info">$59.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <%= image_tag "p3/product-6.png", alt: "" %>
+                                        <div class="caption">
+                                            <a class="btn quickview" role="button" data-toggle="modal" data-target="#modal6">QUICK SHOP</a>
+                                            <p class="product-info"><a class="product-link">striped chambray shirt</a></p>
+                                            <p class="product-info">$59.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal1" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <h4 class="modal-title" id="gridSystemModalLabel">space dye muscle tank</h4>
+                                <div class="row product-list-modal">
+                                    <div class="col-md-8 sub-font">
+                                        <span><b>$39.99</b></span> 
+                                        <span class="item-num">item F1565</span>
+                                        <span class="ratings">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span><u>read reviews</u></span>
+                                        </span>
+                                    </div>
+                                    <div class-"col-md-4">
+                                        <span class="pull-right sub-font"><u>VIEW FULL DETAILS</u></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= image_tag "p3/product-1.png" %>
+                                    </div>
+                                    <div class="col-md-6 pull-left">
+                                        <p class="lead">COLOR: <span class="primary-font">charcoal grey</span>
+                                        <hr>
+                                        <p class="lead modal-info sub-font">$39.99
+                                        <button type="button" class="btn btn-default product-color product1-color1" autofocus="autofocus"></button>
+                                        <button type="button" class="btn btn-default product-color product1-color2"></button>
+                                        </p>
+                                        <hr>
+                                        <p class="lead modal-info">SIZE: <span class="pull-right size-chart sub-font"><u>Size Charts</u></span></p>
+                                        <button class="btn size-btn">xx-small</button>
+                                        <button class="btn size-btn">x-small</button>
+                                        <button class="btn size-btn">small</button>
+                                        <button class="btn size-btn">medium</button>
+                                        <br>
+                                        <button class="btn size-btn">large</button>
+                                        <button class="btn size-btn">x-large</button>
+                                        <hr>
+                                        <div class="flex">
+                                            <p class="lead modal-info">QUANTITY:</p>
+                                            <select data-index="1" class="select-box">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                                <option value="1">5</option>
+                                                <option value="1">6</option>
+                                                <option value="1">7</option>
+                                                <option value="1">8</option>
+                                                <option value="1">9</option>
+                                                <option value="1">10</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <p class="lead modal-info">PRODUCT DETAILS:</p>
+                                        <ul class="item-details">
+                                            <li class="list-style"><i>True to size.</i></li>
+                                            <li class="list-style"><i>Linen / cotton.</i></li>
+                                            <li class="list-style"><i>Handwash.</i></li>
+                                            <li class="list-style"><i>Import.</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bag btn-add" data-dismiss="modal" aria-label="Close">ADD TO BAG</button>
+                                <button type="button" class="btn btn-default btn-bag btn-wish" data-dismiss="modal">ADD TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="modal2" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <h4 class="modal-title" id="gridSystemModalLabel">plaid ruffle blouse</h4>
+                                <div class="row product-list-modal">
+                                    <div class="col-md-8 sub-font">
+                                        <span><b>was: $39.99</b></span> 
+                                        <span class="sale">now: $39.99</span> 
+                                        <span class="item-num">item F1565</span><br>
+                                        <span class="ratings">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span><u>read reviews</u></span>
+                                        </span>
+                                    </div>
+                                    <div class-"col-md-4">
+                                        <span class="pull-right sub-font"><u>VIEW FULL DETAILS</u></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= image_tag "p3/product-2.png" %>
+                                    </div>
+                                    <div class="col-md-6 pull-left">
+                                        <p class="lead">COLOR: <span class="primary-font">charcoal grey</span></p>
+                                        <hr>
+                                        <p class="lead modal-info sub-font">$39.99</p>
+                                        <hr>
+                                        <p class="lead modal-info">SIZE: <span class="pull-right size-chart sub-font"><u>Size Charts</u></span></p>
+                                        <button class="btn btn-default size-btn">xx-small</button>
+                                        <button class="btn btn-default size-btn">x-small</button>
+                                        <button class="btn btn-default size-btn">small</button>
+                                        <button class="btn btn-default size-btn">medium</button>
+                                        <br>
+                                        <button class="btn btn-default size-btn">large</button>
+                                        <button class="btn btn-default size-btn">x-large</button>
+                                        <hr>
+                                        <div class="flex">
+                                            <p class="lead modal-info">QUANTITY:</p>
+                                            <select data-index="1" class="select-box">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                                <option value="1">5</option>
+                                                <option value="1">6</option>
+                                                <option value="1">7</option>
+                                                <option value="1">8</option>
+                                                <option value="1">9</option>
+                                                <option value="1">10</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <p class="lead modal-info">PRODUCT DETAILS:</p>
+                                        <ul class="item-details">
+                                            <li class="list-style"><i>True to size.</i></li>
+                                            <li class="list-style"><i>Linen / cotton.</i></li>
+                                            <li class="list-style"><i>Handwash.</i></li>
+                                            <li class="list-style"><i>Import.</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bag btn-add" data-dismiss="modal" aria-label="Close">ADD TO BAG</button>
+                                <button type="button" class="btn btn-default btn-bag btn-wish" data-dismiss="modal">ADD TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="modal3" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <h4 class="modal-title" id="gridSystemModalLabel">space dye muscle tank</h4>
+                                <div class="row product-list-modal">
+                                    <div class="col-md-8 sub-font">
+                                        <span><b>$39.99</b></span> 
+                                        <span class="item-num">item F1565</span>
+                                        <span class="ratings">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span><u>read reviews</u></span>
+                                        </span>
+                                    </div>
+                                    <div class-"col-md-4">
+                                        <span class="pull-right sub-font"><u>VIEW FULL DETAILS</u></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= image_tag "p3/product-3.png" %>
+                                    </div>
+                                    <div class="col-md-6 pull-left">
+                                        <p class="lead">COLOR: <span class="primary-font">charcoal grey</span></p>
+                                        <hr>
+                                        <p class="lead modal-info sub-font">$39.99</p>
+                                        <hr>
+                                        <p class="lead modal-info">SIZE: <span class="pull-right size-chart sub-font"><u>Size Charts</u></span></p>
+                                        <button class="btn btn-default size-btn">xx-small</button>
+                                        <button class="btn btn-default size-btn">x-small</button>
+                                        <button class="btn btn-default size-btn">small</button>
+                                        <button class="btn btn-default size-btn">medium</button>
+                                        <br>
+                                        <button class="btn btn-default size-btn">large</button>
+                                        <button class="btn btn-default size-btn">x-large</button>
+                                        <hr>
+                                        <div class="flex">
+                                            <p class="lead modal-info">QUANTITY:</p>
+                                            <select data-index="1" class="select-box">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                                <option value="1">5</option>
+                                                <option value="1">6</option>
+                                                <option value="1">7</option>
+                                                <option value="1">8</option>
+                                                <option value="1">9</option>
+                                                <option value="1">10</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <p class="lead modal-info">PRODUCT DETAILS:</p>
+                                        <ul class="item-details">
+                                            <li class="list-style"><i>True to size.</i></li>
+                                            <li class="list-style"><i>Linen / cotton.</i></li>
+                                            <li class="list-style"><i>Handwash.</i></li>
+                                            <li class="list-style"><i>Import.</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bag btn-add" data-dismiss="modal" aria-label="Close">ADD TO BAG</button>
+                                <button type="button" class="btn btn-default btn-bag btn-wish" data-dismiss="modal">ADD TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="modal4" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <h4 class="modal-title" id="gridSystemModalLabel">plaid ruffle blouse</h4>
+                                <div class="row product-list-modal">
+                                    <div class="col-md-8 sub-font">
+                                        <span><b>was $49.99</b></span>
+                                        <span class-"sale"><b>now $39.99</b></span>  
+                                        <span class="item-num">item F1565</span><br>
+                                        <span class="ratings">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span><u>read reviews</u></span>
+                                        </span>
+                                    </div>
+                                    <div class-"col-md-4">
+                                        <span class="pull-right sub-font"><u>VIEW FULL DETAILS</u></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= image_tag "p3/product-4.png" %>
+                                    </div>
+                                    <div class="col-md-6 pull-left">
+                                        <p class="lead">COLOR: <span class="primary-font">charcoal grey</span></p>
+                                        <hr>
+                                        <p class="lead modal-info sub-font">$39.99</p>
+                                        <hr>
+                                        <p class="lead modal-info">SIZE: <span class="pull-right size-chart sub-font"><u>Size Charts</u></span></p>
+                                        <button class="btn btn-default size-btn">xx-small</button>
+                                        <button class="btn btn-default size-btn">x-small</button>
+                                        <button class="btn btn-default size-btn">small</button>
+                                        <button class="btn btn-default size-btn">medium</button>
+                                        <br>
+                                        <button class="btn btn-default size-btn">large</button>
+                                        <button class="btn btn-default size-btn">x-large</button>
+                                        <hr>
+                                        <div class="flex">
+                                            <p class="lead modal-info">QUANTITY:</p>
+                                            <select data-index="1" class="select-box">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                                <option value="1">5</option>
+                                                <option value="1">6</option>
+                                                <option value="1">7</option>
+                                                <option value="1">8</option>
+                                                <option value="1">9</option>
+                                                <option value="1">10</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <p class="lead modal-info">PRODUCT DETAILS:</p>
+                                        <ul class="item-details">
+                                            <li class="list-style"><i>True to size.</i></li>
+                                            <li class="list-style"><i>Linen / cotton.</i></li>
+                                            <li class="list-style"><i>Handwash.</i></li>
+                                            <li class="list-style"><i>Import.</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bag btn-add" data-dismiss="modal" aria-label="Close">ADD TO BAG</button>
+                                <button type="button" class="btn btn-default btn-bag btn-wish" data-dismiss="modal">ADD TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="modal5" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <h4 class="modal-title" id="gridSystemModalLabel">space dye muscle tank</h4>
+                                <div class="row product-list-modal">
+                                    <div class="col-md-8 sub-font">
+                                        <span><b>$39.99</b></span> 
+                                        <span class="item-num">item F1565</span>
+                                        <span class="ratings">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span><u>read reviews</u></span>
+                                        </span>
+                                    </div>
+                                    <div class-"col-md-4">
+                                        <span class="pull-right sub-font"><u>VIEW FULL DETAILS</u></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= image_tag "p3/product-5.png" %>
+                                    </div>
+                                    <div class="col-md-6 pull-left">
+                                        <p class="lead">COLOR: <span class="primary-font">charcoal grey</span></p>
+                                        <hr>
+                                        <p class="lead modal-info sub-font">$39.99</p>
+                                        <hr>
+                                        <p class="lead modal-info">SIZE: <span class="pull-right size-chart sub-font"><u>Size Charts</u></span></p>
+                                        <button class="btn btn-default size-btn">xx-small</button>
+                                        <button class="btn btn-default size-btn">x-small</button>
+                                        <button class="btn btn-default size-btn">small</button>
+                                        <button class="btn btn-default size-btn">medium</button>
+                                        <br>
+                                        <button class="btn btn-default size-btn">large</button>
+                                        <button class="btn btn-default size-btn">x-large</button>
+                                        <hr>
+                                        <div class="flex">
+                                            <p class="lead modal-info">QUANTITY:</p>
+                                            <select data-index="1" class="select-box">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                                <option value="1">5</option>
+                                                <option value="1">6</option>
+                                                <option value="1">7</option>
+                                                <option value="1">8</option>
+                                                <option value="1">9</option>
+                                                <option value="1">10</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <p class="lead modal-info">PRODUCT DETAILS:</p>
+                                        <ul class="item-details">
+                                            <li class="list-style"><i>True to size.</i></li>
+                                            <li class="list-style"><i>Linen / cotton.</i></li>
+                                            <li class="list-style"><i>Handwash.</i></li>
+                                            <li class="list-style"><i>Import.</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bag btn-add" data-dismiss="modal" aria-label="Close">ADD TO BAG</button>
+                                <button type="button" class="btn btn-default btn-bag btn-wish" data-dismiss="modal">ADD TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modal6" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                                <h4 class="modal-title" id="gridSystemModalLabel">space dye muscle tank</h4>
+                                <div class="row product-list-modal">
+                                    <div class="col-md-8 sub-font">
+                                        <span><b>$39.99</b></span> 
+                                        <span class="item-num">item F1565</span>
+                                        <span class="ratings">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <span><u>read reviews</u></span>
+                                        </span>
+                                    </div>
+                                    <div class-"col-md-4">
+                                        <span class="pull-right sub-font"><u>VIEW FULL DETAILS</u></span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <%= image_tag "p3/product-6.png" %>
+                                    </div>
+                                    <div class="col-md-6 pull-left">
+                                        <p class="lead">COLOR: <span class="primary-font">charcoal grey</span></p>
+                                        <hr>
+                                        <p class="lead modal-info sub-font">$39.99</p>
+                                        <hr>
+                                        <p class="lead modal-info">SIZE: <span class="pull-right size-chart sub-font"><u>Size Charts</u></span></p>
+                                        <button class="btn btn-default size-btn">xx-small</button>
+                                        <button class="btn btn-default size-btn">x-small</button>
+                                        <button class="btn btn-default size-btn">small</button>
+                                        <button class="btn btn-default size-btn">medium</button>
+                                        <br>
+                                        <button class="btn btn-default size-btn">large</button>
+                                        <button class="btn btn-default size-btn">x-large</button>
+                                        <hr>
+                                        <div class="flex">
+                                            <p class="lead modal-info">QUANTITY:</p>
+                                            <select data-index="1" class="select-box">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                                <option value="1">5</option>
+                                                <option value="1">6</option>
+                                                <option value="1">7</option>
+                                                <option value="1">8</option>
+                                                <option value="1">9</option>
+                                                <option value="1">10</option>
+                                            </select>
+                                        </div>
+                                        <hr>
+                                        <p class="lead modal-info">PRODUCT DETAILS:</p>
+                                        <ul class="item-details">
+                                            <li class="list-style"><i>True to size.</i></li>
+                                            <li class="list-style"><i>Linen / cotton.</i></li>
+                                            <li class="list-style"><i>Handwash.</i></li>
+                                            <li class="list-style"><i>Import.</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-bag btn-add" data-dismiss="modal" aria-label="Close">ADD TO BAG</button>
+                                <button type="button" class="btn btn-default btn-bag btn-wish" data-dismiss="modal">ADD TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

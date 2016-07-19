@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "about", to: "static_pages#about"
   get "cs1", to: "static_pages#cs1"
   get "cs2", to: "static_pages#cs2"
+  get "ecommerce", to: "static_pages#ecommerce"
 end
