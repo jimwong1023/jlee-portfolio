@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get "cs1", to: "static_pages#cs1"
   get "cs2", to: "static_pages#cs2"
   get "ecommerce", to: "static_pages#ecommerce"
+
+  get "/download_resume", to: "download#resume"
 end
