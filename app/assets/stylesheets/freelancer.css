@@ -639,8 +639,6 @@ blockquote {
 }
 
 .ratings {
-    padding-right: 10px;
-    padding-left: 20px;
     color: #000000;
     font-size: 12px !important;
 }
@@ -810,7 +808,6 @@ blockquote {
     font-size: 12px;
     margin-bottom: 5%;
     border: 1px solid black;
-    background-color: transparent;
     color: black;
     width: 80px;
 }
@@ -940,10 +937,63 @@ button {
 .fa-facebook,
 .fa-linkedin,
 .fa-behance,
-.fa-angle-up {
-    padding-right: 0px !important;
+.fa-angle-up
+.fa-star {
+    padding: 0px !important;
 }
 .project-content p,
 .project-description {
     color: black;
+}
+@media screen and (max-width: 568px) {
+    h1 {
+        font-size: 2em;
+        font-weight: 900 !important;
+    }
+    #portfolio h2 {
+        font-size: 1.25em;
+    }
+    header {
+        height: 65vh;
+    }
+    .skills {
+        font-weight: 600 !important;
+    }
+    section.module.parallax {
+    height: 500px;
+    }
+    section.module.parallax h1 {
+    font-size: 2em;
+    font-weight: 900;
+    margin: 75px auto 10px auto;
+    }
+    section.module.parallax h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    }
+    .footer {
+        height: 700px;
+    }
+    .footer {
+      background-image: url("/assets/contact.png");
+    }
+    .project-content p {
+        font-size: 1.15em;
+    }
+    blockquote {
+        font-size: 1.25em;
+    }
+    .modal-dialog {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project-content h4 {
+        padding: 25px 0px;
+    }
+    .caption {
+        text-align: center;
+    }
+    .thumbnail img {
+        width: 80%;
+    }
 }
