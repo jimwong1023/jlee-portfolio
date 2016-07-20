@@ -810,12 +810,29 @@ blockquote {
     border: 1px solid black;
     color: black;
     width: 80px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 10px 15px;
+    line-height: 1.42857143;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .size-btn:hover,
-.size-btn:visited,
-.size-btn:active {
-    color: black;
-    background-color: #f7f7f7;
+.size-btn:focus,
+.size-btn.focus, {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
 }
 .size-chart {
     font-size: 12px;
@@ -842,6 +859,7 @@ blockquote {
 .btn-default:focus {
     outline: none !important;
     border: 2px solid black !important;
+    color: black !important;
 }
 .product1-color1 {
     background-image: url("/assets/product1-color1.png");
@@ -855,6 +873,8 @@ blockquote {
 } 
 .modal-content {
     margin: 0px !important;
+    border: none !important;
+    border-radius: 0px !important;
 }
 .portfolio-modal .modal-content h1 {
     margin: 25px 0px;
@@ -945,6 +965,9 @@ button {
 .project-description {
     color: black;
 }
+.visible {
+    display:none;
+}
 @media screen and (max-width: 400px) {
     h1 {
         font-size: 2em;
@@ -975,7 +998,7 @@ button {
     font-weight: 600;
     }
     .footer {
-        height: 700px;
+        height: 600px;
     }
     .footer {
       background-image: url("/assets/contact.png");
@@ -1002,11 +1025,49 @@ button {
     .side-nav {
         display: none;
     }
-    section.module.parallax-1,
-    section.module.parallax-2 {
-    display: auto;
-    }
     .sub-font {
-        padding-left: 15px;
+        padding: 20px 0px 20px 15px;
+    }
+    .img-xs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .side-nav,
+    .module,
+    .side {
+        display: none;
+    }
+    .navbar,
+    .navbar-header,
+    .page-scroll,
+    .collapse,
+    .navbar-collapse,
+    .navbar-fixed-top,
+    .navbar-default {
+        background-color: rgb(240, 173, 68);
+    }
+    #portfolio {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contact {
+        padding: 50px 0px;
+    }
+    footer .footer-below  {
+        padding: 0px !important;
+    }
+    .visible,
+    .parallax-4,
+    .parallax-5 {
+        display: block !important; 
+    }
+    .parallax-4,
+    .parallax-5 {
+        height: 200px !important;
     }
 }
