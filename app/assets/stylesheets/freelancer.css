@@ -945,7 +945,7 @@ button {
 .project-description {
     color: black;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 400px) {
     h1 {
         font-size: 2em;
         font-weight: 900 !important;
@@ -954,10 +954,13 @@ button {
         font-size: 1.25em;
     }
     header {
-        height: 65vh;
+        height: 100vh;
     }
     .skills {
         font-weight: 600 !important;
+    }
+    .blah-modal{
+        display: hidden;
     }
     section.module.parallax {
     height: 500px;
@@ -995,5 +998,15 @@ button {
     }
     .thumbnail img {
         width: 80%;
+    }
+    .side-nav {
+        display: none;
+    }
+    section.module.parallax-1,
+    section.module.parallax-2 {
+    display: auto;
+    }
+    .sub-font {
+        padding-left: 15px;
     }
 }
