@@ -502,12 +502,25 @@ section.module.parallax-2, {
   background-size: cover;
   text-align: center;
 }
+.parallax-2 h1 {
+    margin-top: 65px;
+}
 section.parallax-2 h1,
 section.parallax-5 h1 {
   color: white;
 }
 section.module.parallax-4 {
   background-image: url("/assets/hero1.png");
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF;
+}
+section.module.parallax-7 {
+  background-image: url("/assets/hero2.png");
   height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -582,11 +595,12 @@ li {
 }
 .name, .skills,section.module.parallax h1,
 section.module.parallax h2, .parallax-4 h1,
-footer h1, footer h3 {
+footer h1, footer h3, .parallax-7 h1 {
     color: white;
 }
 .parallax-4 h1,
-.parallax-5 h1 {
+.parallax-5 h1,
+.parallax-7 h1 {
     position: relative;
     top: 25%;
 }
@@ -968,12 +982,24 @@ button {
 .visible {
     display:none;
 }
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 400px) {
-    h1 {
+    h1,
+    .name {
         font-size: 2em;
         font-weight: 900 !important;
     }
-    #portfolio h2 {
+    #portfolio h2,
+    h2,
+    .portfolio-modal .modal-content h2 {
         font-size: 1.25em;
     }
     header {
@@ -993,7 +1019,8 @@ button {
     font-weight: 900;
     margin: 75px auto 10px auto;
     }
-    section.module.parallax h2{
+
+    section.module.parallax h2 {
     font-size: 1.25em;
     font-weight: 600;
     }
@@ -1035,11 +1062,10 @@ button {
     max-width: 100%;
     height: auto;
     }
-}
-@media screen and (max-width: 500px) {
     .side-nav,
     .module,
-    .side {
+    .side,
+    .close-modal {
         display: none;
     }
     .navbar,
@@ -1063,11 +1089,10 @@ button {
     }
     .visible,
     .parallax-4,
-    .parallax-5 {
+    .parallax-7 {
         display: block !important; 
     }
-    .parallax-4,
-    .parallax-5 {
-        height: 200px !important;
+    #header {
+        margin-top: 50px;
     }
 }
