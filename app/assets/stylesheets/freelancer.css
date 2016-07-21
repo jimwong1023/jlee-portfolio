@@ -131,6 +131,7 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        padding: 15px 26px;
     }
 }
 
@@ -580,7 +581,7 @@ li {
 .close-btn {
     border-color: #f0ad44;
 }
-.research h1, .lit-review {
+.lit-review {
     margin-top: 100px;
 }
 .border {
@@ -988,18 +989,26 @@ button {
     padding-left: 10px; 
     padding-top: 25px;"
 }
+.img-bottom {
+    padding-bottom: 50px;
+}
 .project-content {
     padding: 50px 0px;
 }
-
-
+.navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: none;
+}
+.about-me {
+    margin-top: 50px;
+}
 
 
 
 
 @media screen and (max-width: 400px) {
     h1,
-    .name {
+    h1.name {
         font-size: 2em;
         font-weight: 900 !important;
     }
@@ -1106,9 +1115,6 @@ button {
     #header {
         margin-top: 50px;
     }
-    .about-me {
-        margin-top: 50px;
-    }
     .container {
         padding: 0px;
     }
@@ -1121,6 +1127,13 @@ button {
     padding-top: 25px;
     }
     .img-bottom {
-        padding-bottom: 50px;
+        padding-bottom: 0px;
+    }
+    .navbar-brand {
+        padding-top: 18px;
+        padding-left: 30px;
+    }
+    .nav > li > a {
+        padding: 10px 30px;
     }
 }
