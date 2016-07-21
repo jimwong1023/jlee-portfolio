@@ -988,9 +988,6 @@ button {
     padding-left: 10px; 
     padding-top: 25px;"
 }
-.skills1 {
-    display: none;
-}
 .project-content {
     padding: 50px 0px;
 }
@@ -1005,6 +1002,9 @@ button {
     .name {
         font-size: 2em;
         font-weight: 900 !important;
+    }
+    #portfolio h1 {
+        margin-bottom: 15px;
     }
     #portfolio h2,
     h2,
@@ -1122,13 +1122,5 @@ button {
     }
     .img-bottom {
         padding-bottom: 50px;
-    }
-    .skills {
-        display: none;
-    }
-    .skills1 {
-        display: block;
-        font-size: 1.25em;
-        font-weight: 600;
     }
 }
