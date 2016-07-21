@@ -564,9 +564,6 @@ section.module.parallax-5 {
 .bg-light {
     background-color: #f7f7f7;
 }
-.project-content {
-    margin-top: 5%;
-}
 li {
     list-style: none;
     color: black;
@@ -976,15 +973,27 @@ button {
     padding: 0px !important;
 }
 .project-content p,
-.project-description {
+.project-description,
+.modal-body p {
     color: black;
 }
 .visible {
     display:none;
 }
-
-
-
+.img-left {
+    padding-right: 10px; 
+    padding-top: 25px;
+}
+.img-right {
+    padding-left: 10px; 
+    padding-top: 25px;"
+}
+.skills1 {
+    display: none;
+}
+.project-content {
+    padding: 50px 0px;
+}
 
 
 
@@ -1025,7 +1034,7 @@ button {
     font-weight: 600;
     }
     .footer {
-        height: 600px;
+        height: 450px;
     }
     .footer {
       background-image: url("/assets/contact.png");
@@ -1065,7 +1074,9 @@ button {
     .side-nav,
     .module,
     .side,
-    .close-modal {
+    .close-modal,
+    .lead,
+    .chat {
         display: none;
     }
     .navbar,
@@ -1094,5 +1105,30 @@ button {
     }
     #header {
         margin-top: 50px;
+    }
+    .about-me {
+        margin-top: 50px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .img-left {
+    padding-right: 0px; 
+    padding-top: 25px;
+    }
+    .img-right {
+    padding-left: 0px;
+    padding-top: 25px;
+    }
+    .img-bottom {
+        padding-bottom: 50px;
+    }
+    .skills {
+        display: none;
+    }
+    .skills1 {
+        display: block;
+        font-size: 1.25em;
+        font-weight: 600;
     }
 }
