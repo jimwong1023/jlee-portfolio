@@ -494,6 +494,18 @@ section.module.parallax-1 {
 section.module.parallax-2, {
   background-image: url("/assets/hero2.png");
 }
+section.module.parallax-8 {
+  background-image: url("/assets/hero6.jpg");
+  height: 450px;
+}
+section.module.parallax-9 {
+  background-image: url("/assets/p2/p2-p1.png");
+  height: 450px;
+}
+section.module.parallax-10 {
+  background-image: url("/assets/hero7.png");
+  height: 450px;
+}
 .parallax-2 {
   background-image: url("/assets/hero2.png");
   height: 400px;
@@ -571,10 +583,6 @@ li {
     font-size: 16px;
     margin: 15px 5px;
 }
-.project-scope {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 li {
     color: #777;
 }
@@ -617,6 +625,7 @@ blockquote {
     color: black;
     margin: 25px;
     padding: 25px 25px 25px 50px;
+    font-weight: 200;
 }
 .lit-review2 li {
     color: black;
@@ -943,6 +952,10 @@ blockquote {
 .col-md-8 {
     padding-right: 100px;
 }
+.col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .fa {
     padding-right: 10px;
 }
@@ -999,18 +1012,16 @@ button {
     font-family: 'Abril Fatface', cursive;
     text-transform: none;
 }
-.about-me {
-    margin-top: 50px;
-}
 
 
 
 
 @media screen and (max-width: 400px) {
     h1,
-    h1.name
-    .chat h1 {
-        font-size: 2em;
+    #header h1.name,
+    .chat h1,
+    .contact h3 {
+        font-size: 2.5em;
         font-weight: 900 !important;
     }
     #portfolio h1 {
@@ -1034,7 +1045,7 @@ button {
     height: 500px;
     }
     section.module.parallax h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 900;
     margin: 75px auto 10px auto;
     }
@@ -1136,5 +1147,8 @@ button {
     }
     .nav > li > a {
         padding: 10px 30px;
+    }
+    .about-me {
+        margin-top: 50px;
     }
 }
