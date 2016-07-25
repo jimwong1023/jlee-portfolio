@@ -1012,7 +1012,9 @@ button {
     font-family: 'Abril Fatface', cursive;
     text-transform: none;
 }
-
+.half-width {
+    padding: 0px 50px 0px 50px;
+}
 
 
 
