@@ -10092,6 +10092,7 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        padding: 15px 26px;
     }
 }
 
@@ -10454,6 +10455,18 @@ section.module.parallax-1 {
 section.module.parallax-2, {
   background-image: url("/assets/hero2.png");
 }
+section.module.parallax-8 {
+  background-image: url("/assets/hero6.jpg");
+  height: 450px;
+}
+section.module.parallax-9 {
+  background-image: url("/assets/p2/p2-p1.png");
+  height: 450px;
+}
+section.module.parallax-10 {
+  background-image: url("/assets/hero7.png");
+  height: 450px;
+}
 .parallax-2 {
   background-image: url("/assets/hero2.png");
   height: 400px;
@@ -10463,12 +10476,25 @@ section.module.parallax-2, {
   background-size: cover;
   text-align: center;
 }
+.parallax-2 h1 {
+    margin-top: 65px;
+}
 section.parallax-2 h1,
 section.parallax-5 h1 {
   color: white;
 }
 section.module.parallax-4 {
   background-image: url("/assets/hero1.png");
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #FFFFFF;
+}
+section.module.parallax-7 {
+  background-image: url("/assets/hero2.png");
   height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -10512,18 +10538,11 @@ section.module.parallax-5 {
 .bg-light {
     background-color: #f7f7f7;
 }
-.project-content {
-    margin-top: 5%;
-}
 li {
     list-style: none;
     color: black;
     font-size: 16px;
     margin: 15px 5px;
-}
-.project-scope {
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 li {
     color: #777;
@@ -10531,7 +10550,7 @@ li {
 .close-btn {
     border-color: #f0ad44;
 }
-.research h1, .lit-review {
+.lit-review {
     margin-top: 100px;
 }
 .border {
@@ -10543,11 +10562,12 @@ li {
 }
 .name, .skills,section.module.parallax h1,
 section.module.parallax h2, .parallax-4 h1,
-footer h1, footer h3 {
+footer h1, footer h3, .parallax-7 h1 {
     color: white;
 }
 .parallax-4 h1,
-.parallax-5 h1 {
+.parallax-5 h1,
+.parallax-7 h1 {
     position: relative;
     top: 25%;
 }
@@ -10566,6 +10586,7 @@ blockquote {
     color: black;
     margin: 25px;
     padding: 25px 25px 25px 50px;
+    font-weight: 200;
 }
 .lit-review2 li {
     color: black;
@@ -10892,12 +10913,16 @@ blockquote {
 .col-md-8 {
     padding-right: 100px;
 }
+.col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .fa {
     padding-right: 10px;
 }
 form {
     display: table;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 button {
     background-color: transparent;
@@ -10923,18 +10948,59 @@ button {
     padding: 0px !important;
 }
 .project-content p,
-.project-description {
+.project-description,
+.modal-body p {
     color: black;
 }
 .visible {
     display:none;
 }
+.img-left {
+    padding-right: 10px; 
+    padding-top: 25px;
+}
+.img-right {
+    padding-left: 10px; 
+    padding-top: 25px;"
+}
+.img-bottom {
+    padding-bottom: 50px;
+}
+.project-content {
+    padding: 50px 0px;
+}
+.navbar-brand {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: none;
+}
+.half-width {
+    padding: 0px 50px 0px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 400px) {
-    h1 {
+    h1,
+    #header h1.name,
+    .chat h1,
+    .contact h3 {
         font-size: 2em;
         font-weight: 900 !important;
     }
-    #portfolio h2 {
+    #portfolio h1 {
+        margin-bottom: 15px;
+    }
+    #portfolio h2,
+    h2,
+    .portfolio-modal .modal-content h2 {
         font-size: 1.25em;
     }
     header {
@@ -10950,16 +11016,17 @@ button {
     height: 500px;
     }
     section.module.parallax h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 900;
     margin: 75px auto 10px auto;
     }
-    section.module.parallax h2{
+
+    section.module.parallax h2 {
     font-size: 1.25em;
     font-weight: 600;
     }
     .footer {
-        height: 600px;
+        height: 450px;
     }
     .footer {
       background-image: url("/assets/contact.png");
@@ -10996,11 +11063,12 @@ button {
     max-width: 100%;
     height: auto;
     }
-}
-@media screen and (max-width: 500px) {
     .side-nav,
     .module,
-    .side {
+    .side,
+    .close-modal,
+    .lead,
+    .chat {
         display: none;
     }
     .navbar,
@@ -11024,12 +11092,32 @@ button {
     }
     .visible,
     .parallax-4,
-    .parallax-5 {
+    .parallax-7 {
         display: block !important; 
     }
-    .parallax-4,
-    .parallax-5 {
-        height: 200px !important;
+    #header {
+        margin-top: 50px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .img-left {
+    padding-right: 0px; 
+    padding-top: 25px;
+    }
+    .img-right {
+    padding-left: 0px;
+    padding-top: 25px;
+    }
+    .img-bottom {
+        padding-bottom: 0px;
+    }
+    .navbar-brand {
+        padding-top: 18px;
+        padding-left: 30px;
+    }
+    .nav > li > a {
+        padding: 10px 30px;
     }
 }
 /*
