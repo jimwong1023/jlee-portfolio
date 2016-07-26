@@ -1018,6 +1018,14 @@ button {
 
 
 
+
+
+
+
+
+
+
+
 @media screen and (max-width: 400px) {
     h1,
     #header h1.name,
@@ -1149,8 +1157,5 @@ button {
     }
     .nav > li > a {
         padding: 10px 30px;
-    }
-    .about-me {
-        margin-top: 50px;
     }
 }
