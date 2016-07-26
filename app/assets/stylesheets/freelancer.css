@@ -489,7 +489,7 @@ section.module.parallax h2{
     font-weight: 500;
 }
 section.module.parallax-1 {
-  background-image: url("/assets/hero1.png");
+  background-image: url("/assets/hero1.jpg");
 }
 section.module.parallax-2, {
   background-image: url("/assets/hero2.png");
@@ -499,11 +499,11 @@ section.module.parallax-8 {
   height: 450px;
 }
 section.module.parallax-9 {
-  background-image: url("/assets/p2/p2-p1.png");
+  background-image: url("/assets/p2/p2-p1.jpg");
   height: 450px;
 }
 section.module.parallax-10 {
-  background-image: url("/assets/hero7.png");
+  background-image: url("/assets/hero7.jpg");
   height: 450px;
 }
 .parallax-2 {
@@ -523,7 +523,7 @@ section.parallax-5 h1 {
   color: white;
 }
 section.module.parallax-4 {
-  background-image: url("/assets/hero1.png");
+  background-image: url("/assets/hero1.jpg");
   height: 400px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
